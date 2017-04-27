@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_welcome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context="com.nukki.gifted.SettingsActivity"
+    android:background="@android:color/black">
+
+<ImageView
+    android:id="@+id/my_logo"
+    android:layout_marginTop="50dp"
+    android:layout_alignParentTop="true"
+    app:srcCompat="@drawable/app_icon_final"
+    android:layout_width="match_parent"
+    android:layout_height="80dp" />
+
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/radioPick"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/my_logo"
+    android:layout_marginTop="30dp"
+    android:paddingLeft="100dp"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorPrimary" >
+
+    <RadioButton
+        android:id="@+id/radioTrending"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="Trending"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="28sp"
+        app:buttonTint="@android:color/holo_red_light"
+        android:editable="false"
+        android:elegantTextHeight="false" />
+
+    <RadioButton
+        android:id="@+id/radioRandom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="Random"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="28sp"
+        app:buttonTint="@android:color/holo_purple" />
+
+    <RadioButton
+        android:id="@+id/radioCustom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Custom"
+        android:textSize="28sp"
+        android:fontFamily="sans-serif-condensed"
+        app:buttonTint="@android:color/holo_green_light" />
+
+
+</RadioGroup>
+
+    <EditText
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="1dp"
+        android:id="@+id/input"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColor="?attr/colorAccent"
+        android:textSize="30sp"
+        android:layout_below="@+id/radioPick"
+        android:layout_centerHorizontal="true"
+        android:hint="e.g. pugs"
+        android:fontFamily="sans-serif-condensed" />
+
+    <ImageButton
+        android:text="Done"
+        app:srcCompat="@drawable/done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="34dp"
+        android:id="@+id/doneBtn"
+        android:fontFamily="sans-serif-condensed"
+        android:background="?android:attr/panelColorBackground"
+        android:onClick="onClickDone"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
