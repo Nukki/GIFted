@@ -1,8 +1,10 @@
 # GIFted
 
-This app is a project for my CSCI 395 Android Application Development class.
+* swipe through treding GIFs
+* get a random reaction GIF
+* get your custom GIFs with search
 
-It uses [Giphy API](https://api.giphy.com/) as a source of GIFs.
+It's project for my CSCI 395 Android Application Development class.
 
-You can swipe through treding GIFs, get a random reaction GIF or get your
-custom GIFs with search.
+GIF are obtained from [Giphy API](https://api.giphy.com/)
+
